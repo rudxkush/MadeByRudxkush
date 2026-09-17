@@ -70,7 +70,7 @@ const Hero = ({ personalData, metrics }) => {
               <div className="relative">
                 <div className="w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-google-blue shadow-2xl transform group-hover:scale-105 transition-all duration-300">
                   <img 
-                    src="/images/profile.png" 
+                    src={`${process.env.PUBLIC_URL}/images/profile.webp`}
                     alt={personalData.name}
                     className="w-full h-full object-cover"
                   />

@@ -13,7 +13,7 @@ export const portfolioData = {
 
   metrics: [
     { value: "2M+", label: "Users Served", description: "Banking platform reach" },
-    { value: "40%", label: "Latency Reduced", description: "Core banking service optimization" },
+    { value: "15%", label: "Latency Reduced", description: "Core banking service optimization" },
     { value: "550+", label: "Problems Solved", description: "Competitive programming" },
     { value: "Top 2%", label: "LeetCode Rank", description: "Global ranking" }
   ],
@@ -38,9 +38,9 @@ export const portfolioData = {
       period: "May 2025 – Nov 2025",
       type: "Full-time",
       achievements: [
-        "Developed C# Copilot extension for Nestlé, boosting workflow efficiency 40% across sales teams",
-        "Built serverless pipeline with Python and Azure Functions, processing 10K+ records, removing manual errors",
-        "Implemented CI/CD pipeline using GitHub Actions, Docker, Kubernetes, cutting deployment time 30%"
+        "Developed C# Copilot extension for Nestlé, boosting workflow efficiency by 40\% across sales teams.",
+        "Built serverless pipeline with Python and Azure Functions, processing 10K+ records, removing manual errors.",
+        "Set up a CI/CD pipeline using GitHub Actions and Docker, automating build and deploy steps that were previously done manually, cutting deployment time by 30%."
       ],
       technologies: ["C#", "Python", "TypeScript", "Azure", "SQL", "gRPC", "Docker", "Kubernetes", "GitHub Actions"],
       impact: {
@@ -57,14 +57,14 @@ export const portfolioData = {
       period: "Jun 2024 - Nov 2024",
       type: "Internship",
       achievements: [
-        "Engineered Java/Spring Boot APIs for ICICI Bank's platform, serving over 2M+ users",
-        "Slashed API latency by 40% for a core banking service by optimizing PostgreSQL queries",
-        "Developed a client-facing dashboard in React.js, shipping a key feature for HDFC Bank"
+        "Engineered Java/Spring Boot APIs for ICICI Bank's platform, serving over 2M users.",
+        "Diagnosed N+1 query patterns in a core banking service and rewrote them as indexed joins/batched fetches, cutting P95 API latency by 15%.",
+        "Developed a client-facing dashboard in React.js, shipping a key feature for HDFC Bank."
       ],
       technologies: ["Java", "Spring Boot", "Node.js", "React.js", "TypeScript", "PostgreSQL", "AWS", "Docker"],
       impact: {
         users: "2M+",
-        latencyReduction: "40%",
+        latencyReduction: "15%",
         clientsServed: "2"
       }
     },
@@ -76,8 +76,8 @@ export const portfolioData = {
       period: "Dec 2023 – Jan 2024",
       type: "Internship",
       achievements: [
-        "Optimized Flutter widget tree, cutting render time 25% and improving UX for 1K+ Daily active users",
-        "Integrated REST APIs and refined NoSQL flows, reducing query latency 20%"
+        "Optimized Flutter widget tree, cutting render time by 25% and improving UX for 1K+ daily active users.",
+        "Integrated REST APIs and refined NoSQL flows, reducing query latency by 20%."
       ],
       technologies: ["Flutter", "Dart", "Firebase", "MongoDB", "RESTful APIs", "GraphQL"],
       impact: {
@@ -95,10 +95,9 @@ export const portfolioData = {
       period: "Jan 2025 - Mar 2025",
       description: "Implemented GPT-2 model from scratch including Transformer blocks, custom tokenizer, and training pipeline for spam detection.",
       achievements: [
-        "Built GPT-2 (small) architecture entirely from scratch with custom Transformer blocks",
-        "Engineered multi-head attention mechanism and Byte Pair Encoding tokenizer",
-        "Achieved 97.5% validation accuracy and 95.7% test accuracy",
-        "Improved model convergence by 20% through custom optimization techniques"
+        "Implemented a GPT-2 (small) model entirely from scratch, including Transformer blocks, tokenizer, and training pipeline.",
+        "Engineered custom multi-head attention and Byte Pair Encoding, improving convergence by 20%.",
+        "Attained 97.5% validation and 95.7% test accuracy, demonstrating strong generalization capabilities."
       ],
       technologies: ["Python", "PyTorch", "Transformers", "NLP", "NumPy"],
       links: {
@@ -154,7 +153,7 @@ export const portfolioData = {
       technologies: ["JavaScript", "HTML5", "CSS3", "Canvas API"],
       links: {
         github: "https://github.com/rudxkush/gun-game",
-        demo: null
+        demo: "https://rudxkush.github.io/gun-game/"
       },
       architecture: {
         type: "Game Development",
@@ -247,7 +246,7 @@ export const portfolioData = {
       position: "1st Runner Up",
       date: "Jan 2026",
       description: "Developed advanced AI guardrails for Grok, securing 1st Runner Up position",
-      link: "#"
+      link: "https://drive.google.com/drive/folders/1UAuCuNeSSeUKVPXqvJub3fCtRnG68xLk?usp=sharing"
     },
     {
       id: 2,
