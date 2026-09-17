@@ -1,70 +1,115 @@
-# Getting Started with Create React App
+# Rudra Kushwah — Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A responsive, single-page portfolio site showcasing my experience, projects, skills, and achievements as a Software Engineer.
 
-## Available Scripts
+**🔗 Live site:** [rudxkush.github.io/MadeByRudxkush](https://rudxkush.github.io/MadeByRudxkush/)
 
-In the project directory, you can run:
+## Overview
 
-### `npm start`
+Built as a fully static React application — no backend, no database. All content is driven by a single structured data file, making it easy to update without touching component code.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Responsive design** — works across mobile, tablet, and desktop
+- **Dark/Light theme toggle** with persisted preference
+- **Scroll-triggered animations** via Intersection Observer
+- **Sections:** Hero, About, Experience, Projects, Skills, Achievements, Contact
+- **Working contact form** — submissions handled via [Formspree](https://formspree.io), no backend required
+- **Data-driven content** — all personal/experience/project data lives in one file (`src/data/mock.js`) for easy updates
 
-### `npm test`
+## Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **React** — component-based UI
+- **Tailwind CSS** — utility-first styling
+- **shadcn/ui + Radix UI** — accessible, unstyled UI primitives
+- **Lucide React** — icon set
+- **CRACO** — CRA configuration override (path aliases, build config)
+- **Formspree** — serverless contact form handling
+- **GitHub Pages** — static hosting/deployment
 
-### `npm run build`
+## Project Structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+frontend/
+├── public/
+│   ├── index.html
+│   └── images/              # profile photo, background assets
+├── src/
+│   ├── components/
+│   │   ├── ui/               # shadcn/ui primitives
+│   │   ├── Hero.jsx
+│   │   ├── About.jsx
+│   │   ├── Experience.jsx
+│   │   ├── Projects.jsx
+│   │   ├── Skills.jsx
+│   │   ├── Achievements.jsx
+│   │   ├── Contact.jsx
+│   │   ├── Navbar.jsx
+│   │   └── Footer.jsx
+│   ├── context/
+│   │   └── ThemeContext.jsx  # dark/light theme state
+│   ├── data/
+│   │   └── mock.js           # all portfolio content (single source of truth)
+│   ├── hooks/
+│   │   ├── use-toast.js
+│   │   └── useFadeInOnScroll.js
+│   ├── lib/
+│   │   └── utils.js
+│   ├── App.js
+│   └── index.js
+├── craco.config.js
+├── tailwind.config.js
+└── package.json
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Prerequisites
+- Node.js (v16+)
+- npm
 
-### `npm run eject`
+### Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+cd frontend
+npm install --legacy-peer-deps
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+> `--legacy-peer-deps` is needed due to an unused shadcn `date-fns`/`react-day-picker` version mismatch in the dependency tree — it doesn't affect functionality.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Run locally
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+npm start
+```
+Opens at [http://localhost:3000](http://localhost:3000).
 
-## Learn More
+### Production build
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm run build
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Deployment
 
-### Code Splitting
+This site is deployed to **GitHub Pages** via the `gh-pages` package.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+npm run deploy
+```
 
-### Analyzing the Bundle Size
+This builds the app and pushes the `build/` output to the `gh-pages` branch, which GitHub Pages serves directly. The `homepage` field in `package.json` is set to match the repo's Pages URL so all asset paths resolve correctly.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Customization
 
-### Making a Progressive Web App
+To update the content shown on the site (experience, projects, skills, achievements, contact info), edit:
+```
+src/data/mock.js
+```
+No component changes are needed for content updates — components render whatever this file provides.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Contact
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **Email:** kushwahrudra919@gmail.com
+- **LinkedIn:** [linkedin.com/in/rudxkush](https://linkedin.com/in/rudxkush)
+- **GitHub:** [github.com/rudxkush](https://github.com/rudxkush)
