@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/MadeByRudxkush/static/css/main.d2ef6324.css",
+    "main.js": "/MadeByRudxkush/static/js/main.9400e2d8.js",
+    "index.html": "/MadeByRudxkush/index.html",
+    "main.d2ef6324.css.map": "/MadeByRudxkush/static/css/main.d2ef6324.css.map",
+    "main.9400e2d8.js.map": "/MadeByRudxkush/static/js/main.9400e2d8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d2ef6324.css",
+    "static/js/main.9400e2d8.js"
+  ]
+}
